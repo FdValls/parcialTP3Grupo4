@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.example.parcialtp3grupo4.R
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         btnContinuar.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
+            Toast.makeText(this, "Access Success", Toast.LENGTH_SHORT)
+                .show()
+            finish()
         }
     }
 }

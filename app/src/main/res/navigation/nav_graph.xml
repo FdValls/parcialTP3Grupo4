@@ -9,9 +9,27 @@
         android:id="@+id/listProductFragment"
         android:name="com.example.parcialtp3grupo4.recycleview.ListProductFragment"
         android:label="fragment_list_product"
-        tools:layout="@layout/fragment_list_product" />
+        tools:layout="@layout/fragment_list_product" >
+        <action
+            android:id="@+id/action_listProductFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
     <activity
         android:id="@+id/settingsActivity"
         android:name="com.example.parcialtp3grupo4.activities.SettingsActivity"
         android:label="SettingsActivity" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.parcialtp3grupo4.fragments.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="product"
+            app:argType="com.example.parcialtp3grupo4.entities.Product" />
+    </fragment>
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.parcialtp3grupo4.fragments.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
 </navigation>

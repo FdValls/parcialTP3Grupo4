@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.parcialtp3grupo4.R
@@ -88,12 +89,11 @@ class ListProductFragment : Fragment(), Serializable {
     }
 
     fun onItemClick(position: Int): Boolean {
-        Snackbar.make(v, position.toString(), Snackbar.LENGTH_SHORT).show()
-        Toast.makeText(activity, "Ir a detalles", Toast.LENGTH_SHORT)
+        Toast.makeText(activity, "Detalles del productoo", Toast.LENGTH_SHORT)
             .show()
         val myProduct = products[position]
-        //var a = ListProductFragmentDirections.actionListProductFragmentToTerceraPantalla(myProduct)
-        //v.findNavController().navigate(a)
+        var a = ListProductFragmentDirections.actionListProductFragmentToProductDetailFragment(myProduct)
+        v.findNavController().navigate(a)
 
         return true
     }

@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/activity_home.xml" value="0.15" />
         <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
+        <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/activity_splash.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/fragment_list_product.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/fragment_logout.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/fragment_product_detail.xml" value="0.22" />
         <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/layout/item_product.xml" value="0.184375" />
         <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/menu/menu.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/ferna/OneDrive/Escritorio/Facu/TP3/parcialtp3grupo4/app/src/main/res/xml/root_preferences.xml" value="0.67" />
       </map>
     </option>
   </component>
