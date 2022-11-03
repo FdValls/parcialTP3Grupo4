@@ -19,14 +19,11 @@ class HomeActivity : AppCompatActivity() {
     lateinit var navController: NavController
     lateinit var drawerLayout: DrawerLayout
 
-    private var userName: String? = null
-
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
 
         navController = findNavController(R.id.hostFragment)
 
@@ -35,14 +32,15 @@ class HomeActivity : AppCompatActivity() {
         // For Navigation UP
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
         //Muestro el drawer navigation (la hamburguesa), pero no le doy ninguna action!
+
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+
         //Aca si le doy la action y permito navegar por el el navController
         NavigationUI.setupWithNavController(navigation_view, navController)
 
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        //return navController.navigateUp()
         return NavigationUI.navigateUp(navController, appBarConfiguration)
 
     }

@@ -23,17 +23,9 @@ class ListProductFragment : Fragment(), Serializable {
     var products: MutableList<Product> = ArrayList()
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var productListAdapter: ProductAdapter
-    lateinit var nombre: String
-    lateinit var passwd: String
-    private lateinit var title: TextView
 
     companion object {
         fun newInstance() = ListProductFragment()
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -89,7 +81,7 @@ class ListProductFragment : Fragment(), Serializable {
     }
 
     fun onItemClick(position: Int): Boolean {
-        Toast.makeText(activity, "Detalles del productoo", Toast.LENGTH_SHORT)
+        Toast.makeText(activity, "Detalles del producto", Toast.LENGTH_SHORT)
             .show()
         val myProduct = products[position]
         var a = ListProductFragmentDirections.actionListProductFragmentToProductDetailFragment(myProduct)
