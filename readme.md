@@ -18,5 +18,7 @@ Crear en 3 horas una aplicación con los elementos solicitados en el examen
 
 Un resumen de la aplicación:
 
-https://user-images.githubusercontent.com/99664296/199626519-b86a9316-a0e9-4edf-bb74-b16653c74a2e.mov
+_Profe, le dejamos comentarios en el codigo explicando un poco el funcionamiento, logramos arreglar el splash y mejoramos el setting con algunas funcionalidades_
+
+
 
